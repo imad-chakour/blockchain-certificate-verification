@@ -24,3 +24,7 @@ monitoring/
 data/
 *.db
 *.sqlite
+
+# Add this to your .gitignore file
+monitoring/prometheus/*
+!monitoring/prometheus/prometheus.yml
