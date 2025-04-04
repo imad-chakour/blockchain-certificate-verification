@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Web3 from 'web3';
 import '../App.css';
 import { Button } from './Button';
-import './HeroSection.css';
+import './css/HeroSection.css';
 import { chatWithLLM, uploadCertificate, verifyCertificate } from './services/api';
 
 class ErrorBoundary extends React.Component {
