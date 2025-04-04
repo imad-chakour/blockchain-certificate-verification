@@ -28,3 +28,30 @@ data/
 # Add this to your .gitignore file
 monitoring/prometheus/*
 !monitoring/prometheus/prometheus.yml
+
+Add-Content -Path .gitignore -Value @"
+# Virtual environment
+venv/
+
+# Prometheus binaries and data
+monitoring/prometheus/prometheus.exe
+monitoring/prometheus/promtool.exe
+monitoring/prometheus/data/
+monitoring/prometheus/chunks_head/
+
+# Large binary files
+*.dll
+*.lib
+*.exe
+*.pth
+*.bin
+*.data
+*.h5
+*.pt
+*.pkl
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+"@
