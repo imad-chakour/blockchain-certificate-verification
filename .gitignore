@@ -8,12 +8,19 @@ venv/
 .venv/
 env/
 
-# IDE files
-.vscode/
-.idea/
-*.swp
-*.swo
+# Large files/binary files
+*.dll
+*.lib
+*.exe
+*.pth
+*.bin
+*.data
+*.h5
+*.pt
+*.pkl
 
-# System files
-.DS_Store
-Thumbs.db
+# Monitoring/data files
+monitoring/
+data/
+*.db
+*.sqlite
